@@ -12,20 +12,20 @@
         <div id="elementoParaesconder" class="home">
           <h1>Qual é a sua sorte de hoje?</h1>
           <p>Abra o biscoito e descubra!</p>
-          <button id="img" onClick="handleClick()">
-            <img id="biscoitoFechado" src="assets/biscoitoFechado.svg" alt="Biscoito da sorte fechado">
-          </button>
+          
+          <img id="biscoitoImg" src="assets/biscoitoFechado.svg">
+          <button id="openButton" style="display: none;"></button>
         </div>  
-
-  
     
         <div id="elementoParaMostrar" class="sorte">
           <h1>Aqui está a sua sorte de hoje:</h1>
-          <div class="mensagem">
-            <p>Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</p>
+          
+          <div id="mensagem">
+           
           </div>
     
-          <img src="assets/biscoitoAberto.svg" alt="Biscoito aberto">
+          <img src="assets/biscoitoAberto.svg">
+   
           <button id="abrirBiscoito" onClick="outroBiscoito()">Abrir outro biscoito</button>
         </div> 
     
