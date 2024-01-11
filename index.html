@@ -9,24 +9,27 @@
 <body>
     <main>
 
-        <div id="elementoParaesconder" class="home">
+        <!--<div id="elementoParaesconder" class="home">-->
+          <div class="fechado">
           <h1>Qual é a sua sorte de hoje?</h1>
           <p>Abra o biscoito e descubra!</p>
-          
-          <img id="biscoitoImg" src="assets/biscoitoFechado.svg">
-          <button id="openButton" style="display: none;"></button>
+
+          <a id="abrirBotao" onclick="abrirBotao()" href="#"><img src="assets/biscoitoFechado.svg" alt="Imagem de um biscoito da sorte fechado"></a>
+
+         <!-- <img id="biscoitoImg" src="assets/biscoitoFechado.svg">
+          <button id="abrirBotao" onclick="abrirBiscoito()" style="display: none;"></button>-->
         </div>  
     
-        <div id="elementoParaMostrar" class="sorte">
+        <div class="aberto hide">
+        <!--<div id="elementoParaMostrar" class="sorte hide">-->
           <h1>Aqui está a sua sorte de hoje:</h1>
-          
           <div id="mensagem">
-           
+            
           </div>
     
           <img src="assets/biscoitoAberto.svg">
    
-          <button id="abrirBiscoito" onClick="outroBiscoito()">Abrir outro biscoito</button>
+          <button id="fecharBotao" onclick="fecharBiscoito()">Abrir outro biscoito</button>
         </div> 
     
       </main>
