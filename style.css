@@ -1,7 +1,6 @@
 body {
     display: inline-flex;
     padding: 239px 542px 319px 542px;
-    //align-items: flex-start;
     align-items: center;
     background: linear-gradient(45deg, #190361 0%, #B0F 100%);
 }
@@ -49,7 +48,16 @@ main {
         border: none;
         background-color: transparent;
     }
+
+    
 }
+
+
+.fechado img:hover {
+    animation: vibrate 0.2s infinite;
+}
+    
+
 
 #elementoParaMostrar {
     display: none;
@@ -64,8 +72,10 @@ main {
 
     h1 {
         color: #34355B;
+        font-family: Montserrat;
+        font-size: 24px;
     }
-    
+
     p {
         
         font-family: "Dancing Script", cursive;
@@ -93,32 +103,9 @@ main {
         font-weight: 700;
         margin-top: 1.7rem;
         margin-left: 7rem;
+        cursor: pointer;
       }
 
-  /*  flex-direction: column;
-    align-items: center;
-    gap: 17px;
-    
-    h1 {
-        color: #34355B;
-
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-
-    button {
-        display: flex;
-        padding: 16px;
-        align-items: flex-start;
-        gap: 10px;
-        border-radius: 4px;
-        background: #FF9500;
-        color: #fff
-    }*/
 }
 
 #mensagem {
@@ -130,7 +117,7 @@ main {
     background: #E4EDF1;
     box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
 
-    p {
+    
         color: #000;
 
         text-align: center;
@@ -139,9 +126,27 @@ main {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-    }
+    
 }
 
 .hide {
     display: none;
 }
+
+  @keyframes vibrate {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
