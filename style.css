@@ -48,16 +48,12 @@ main {
         border: none;
         background-color: transparent;
     }
-
-    
 }
 
 
 .fechado img:hover {
     animation: vibrate 0.2s infinite;
 }
-    
-
 
 #elementoParaMostrar {
     display: none;
@@ -74,6 +70,7 @@ main {
         color: #34355B;
         font-family: Montserrat;
         font-size: 24px;
+        text-align: center;
     }
 
     p {
@@ -109,6 +106,7 @@ main {
 }
 
 #mensagem {
+    animation: appear 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     display: flex;
     padding: 10px;
     justify-content: center;
@@ -116,6 +114,8 @@ main {
     gap: 10px;
     background: #E4EDF1;
     box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+    margin: 3rem 2rem 1rem 2rem;
 
     
         color: #000;
@@ -148,5 +148,17 @@ main {
     }
     100% {
       transform: rotate(0deg);
+    }
+  }
+
+  @keyframes appear {
+    0% {
+      transform: translateZ(900px) translateY(200px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateZ(0) translateY(0);
+      opacity: 1;
     }
   }
